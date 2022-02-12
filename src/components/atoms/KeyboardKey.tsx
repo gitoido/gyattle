@@ -5,13 +5,15 @@ import { IKeyboardKey } from 'src/interfaces/keyboardKey.interface';
 
 interface Props {
   keyboardKey: IKeyboardKey;
+  onPress: () => void;
 }
 
-const KeyboardKey: React.FC<Props> = ({ keyboardKey }) => {
+const KeyboardKey: React.FC<Props> = ({ keyboardKey, onPress }) => {
   return (
     <button
       type="button"
       data-key={keyboardKey.dataKey}
+      onClick={onPress}
       className={classNames(`flex h-[58px] w-full select-none items-center justify-center rounded text-sm font-medium uppercase`, {
         'bg-nwordle-gray-200': keyboardKey.state === KeyboardKeyState.IDLE,
         'bg-nwordle-gray-400 text-white': keyboardKey.state === KeyboardKeyState.ABSENT,
