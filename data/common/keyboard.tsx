@@ -128,7 +128,7 @@ export const keyboardRow3: IKeyboardKey[] = [
   {
     id: generateId(),
     state: KeyboardKeyState.IDLE,
-    dataKey: '↵',
+    dataKey: 'Enter',
     content: <>enter</>,
   },
   {
@@ -176,7 +176,7 @@ export const keyboardRow3: IKeyboardKey[] = [
   {
     id: generateId(),
     state: KeyboardKeyState.IDLE,
-    dataKey: '←',
+    dataKey: 'Backspace',
     content: <Image src={BackspaceSVG} alt="Backspace icon" />,
   },
 ];
