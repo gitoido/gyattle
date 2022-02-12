@@ -12,7 +12,7 @@ const KeyboardKey: React.FC<Props> = ({ keyboardKey }) => {
     <button
       type="button"
       data-key={keyboardKey.dataKey}
-      className={classNames(`flex h-[58px] w-full select-none items-center justify-center rounded text-sm font-semibold uppercase`, {
+      className={classNames(`flex h-[58px] w-full select-none items-center justify-center rounded text-sm font-medium uppercase`, {
         'bg-nwordle-gray-200': keyboardKey.state === KeyboardKeyState.IDLE,
         'bg-nwordle-gray-400 text-white': keyboardKey.state === KeyboardKeyState.ABSENT,
         'bg-nwordle-yellow-50 text-white': keyboardKey.state === KeyboardKeyState.PRESENT,
