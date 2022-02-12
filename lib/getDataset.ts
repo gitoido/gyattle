@@ -2,7 +2,7 @@ export function getDataset(length: number): Promise<string[]> {
   return new Promise<string[]>((resolve, reject) => {
     switch (length) {
       case 2:
-        return import('data/common/words-length-2')
+        return import('data/common/words/words-length-2')
           .then(({ wordsLength2 }) => {
             resolve(wordsLength2);
           })
@@ -10,7 +10,7 @@ export function getDataset(length: number): Promise<string[]> {
             reject(err);
           });
       case 3:
-        return import('data/common/words-length-3')
+        return import('data/common/words/words-length-3')
           .then(({ wordsLength3 }) => {
             resolve(wordsLength3);
           })
@@ -18,7 +18,7 @@ export function getDataset(length: number): Promise<string[]> {
             reject(err);
           });
       case 4:
-        return import('data/common/words-length-4')
+        return import('data/common/words/words-length-4')
           .then(({ wordsLength4 }) => {
             resolve(wordsLength4);
           })
@@ -26,7 +26,7 @@ export function getDataset(length: number): Promise<string[]> {
             reject(err);
           });
       case 5:
-        return import('data/common/words-length-5')
+        return import('data/common/words/words-length-5')
           .then(({ wordsLength5 }) => {
             resolve(wordsLength5);
           })
@@ -34,7 +34,7 @@ export function getDataset(length: number): Promise<string[]> {
             reject(err);
           });
       case 6:
-        return import('data/common/words-length-6')
+        return import('data/common/words/words-length-6')
           .then(({ wordsLength6 }) => {
             resolve(wordsLength6);
           })
@@ -42,7 +42,7 @@ export function getDataset(length: number): Promise<string[]> {
             reject(err);
           });
       case 7:
-        return import('data/common/words-length-7')
+        return import('data/common/words/words-length-7')
           .then(({ wordsLength7 }) => {
             resolve(wordsLength7);
           })
@@ -50,7 +50,7 @@ export function getDataset(length: number): Promise<string[]> {
             reject(err);
           });
       case 8:
-        return import('data/common/words-length-8')
+        return import('data/common/words/words-length-8')
           .then(({ wordsLength8 }) => {
             resolve(wordsLength8);
           })
@@ -58,7 +58,7 @@ export function getDataset(length: number): Promise<string[]> {
             reject(err);
           });
       case 9:
-        return import('data/common/words-length-9')
+        return import('data/common/words/words-length-9')
           .then(({ wordsLength9 }) => {
             resolve(wordsLength9);
           })
@@ -66,7 +66,7 @@ export function getDataset(length: number): Promise<string[]> {
             reject(err);
           });
       case 10:
-        return import('data/common/words-length-10')
+        return import('data/common/words/words-length-10')
           .then(({ wordsLength10 }) => {
             resolve(wordsLength10);
           })
@@ -74,7 +74,7 @@ export function getDataset(length: number): Promise<string[]> {
             reject(err);
           });
       case 11:
-        return import('data/common/words-length-11')
+        return import('data/common/words/words-length-11')
           .then(({ wordsLength11 }) => {
             resolve(wordsLength11);
           })
@@ -82,7 +82,7 @@ export function getDataset(length: number): Promise<string[]> {
             reject(err);
           });
       case 12:
-        return import('data/common/words-length-12')
+        return import('data/common/words/words-length-12')
           .then(({ wordsLength12 }) => {
             resolve(wordsLength12);
           })
@@ -91,7 +91,7 @@ export function getDataset(length: number): Promise<string[]> {
           });
 
       case 13:
-        return import('data/common/words-length-13')
+        return import('data/common/words/words-length-13')
           .then(({ wordsLength13 }) => {
             resolve(wordsLength13);
           })
@@ -99,7 +99,7 @@ export function getDataset(length: number): Promise<string[]> {
             reject(err);
           });
       case 14:
-        return import('data/common/words-length-14')
+        return import('data/common/words/words-length-14')
           .then(({ wordsLength14 }) => {
             resolve(wordsLength14);
           })
@@ -107,7 +107,7 @@ export function getDataset(length: number): Promise<string[]> {
             reject(err);
           });
       case 15:
-        return import('data/common/words-length-15')
+        return import('data/common/words/words-length-15')
           .then(({ wordsLength15 }) => {
             resolve(wordsLength15);
           })
