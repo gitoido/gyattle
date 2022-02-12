@@ -2,6 +2,9 @@ module.exports = {
   content: ['./pages/**/*.{js,ts,jsx,tsx}', './src/components/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      fontFamily: {
+        clearSans: 'Clear Sans, sans-serif',
+      },
       colors: {
         nwordle: {
           gray: {

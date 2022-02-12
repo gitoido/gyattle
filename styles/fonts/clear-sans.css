@@ -1,0 +1,83 @@
+@font-face {
+  font-family: 'Clear Sans';
+  src: url('/fonts/ClearSans/ClearSans-Italic.eot');
+  src: local('Clear Sans Italic'), local('ClearSans-Italic'),
+    url('/fonts/ClearSans/ClearSans-Italic.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/ClearSans/ClearSans-Italic.woff2') format('woff2'), url('/fonts/ClearSans/ClearSans-Italic.woff') format('woff'),
+    url('/fonts/ClearSans/ClearSans-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Clear Sans';
+  src: url('/fonts/ClearSans/ClearSans-Medium.eot');
+  src: local('Clear Sans Medium'), local('ClearSans-Medium'),
+    url('/fonts/ClearSans/ClearSans-Medium.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/ClearSans/ClearSans-Medium.woff2') format('woff2'), url('/fonts/ClearSans/ClearSans-Medium.woff') format('woff'),
+    url('/fonts/ClearSans/ClearSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clear Sans';
+  src: url('/fonts/ClearSans/ClearSans.eot');
+  src: local('Clear Sans'), local('ClearSans'), url('/fonts/ClearSans/ClearSans.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/ClearSans/ClearSans.woff2') format('woff2'), url('/fonts/ClearSans/ClearSans.woff') format('woff'),
+    url('/fonts/ClearSans/ClearSans.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clear Sans';
+  src: url('/fonts/ClearSans/ClearSans-Bold.eot');
+  src: local('Clear Sans Bold'), local('ClearSans-Bold'), url('/fonts/ClearSans/ClearSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/ClearSans/ClearSans-Bold.woff2') format('woff2'), url('/fonts/ClearSans/ClearSans-Bold.woff') format('woff'),
+    url('/fonts/ClearSans/ClearSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clear Sans';
+  src: url('/fonts/ClearSans/ClearSans-BoldItalic.eot');
+  src: local('Clear Sans Bold Italic'), local('ClearSans-BoldItalic'),
+    url('/fonts/ClearSans/ClearSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/ClearSans/ClearSans-BoldItalic.woff2') format('woff2'), url('/fonts/ClearSans/ClearSans-BoldItalic.woff') format('woff'),
+    url('/fonts/ClearSans/ClearSans-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Clear Sans';
+  src: url('/fonts/ClearSans/ClearSans-MediumItalic.eot');
+  src: local('Clear Sans Medium Italic'), local('ClearSans-MediumItalic'),
+    url('/fonts/ClearSans/ClearSans-MediumItalic.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/ClearSans/ClearSans-MediumItalic.woff2') format('woff2'), url('/fonts/ClearSans/ClearSans-MediumItalic.woff') format('woff'),
+    url('/fonts/ClearSans/ClearSans-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Clear Sans';
+  src: url('/fonts/ClearSans/ClearSans-Thin.eot');
+  src: local('Clear Sans Thin'), local('ClearSans-Thin'), url('/fonts/ClearSans/ClearSans-Thin.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/ClearSans/ClearSans-Thin.woff2') format('woff2'), url('/fonts/ClearSans/ClearSans-Thin.woff') format('woff'),
+    url('/fonts/ClearSans/ClearSans-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clear Sans';
+  src: url('/fonts/ClearSans/ClearSans-Light.eot');
+  src: local('Clear Sans Light'), local('ClearSans-Light'), url('/fonts/ClearSans/ClearSans-Light.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/ClearSans/ClearSans-Light.woff2') format('woff2'), url('/fonts/ClearSans/ClearSans-Light.woff') format('woff'),
+    url('/fonts/ClearSans/ClearSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
