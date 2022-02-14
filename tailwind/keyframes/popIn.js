@@ -5,6 +5,6 @@ module.exports = {
   },
   to: {
     transform: 'scale(1.1)',
-    opacity: '0',
+    opacity: '1',
   },
 };
