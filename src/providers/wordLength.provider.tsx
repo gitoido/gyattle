@@ -1,5 +1,5 @@
-import { WordLengthContext } from 'contexts/wordLength.context';
-import { useWordLength } from 'hooks/useWordLength';
+import { WordLengthContext } from 'src/contexts/wordLength.context';
+import { useWordLength } from 'src/hooks/useWordLength';
 import React from 'react';
 
 const WordLengthProvider: React.FC = ({ children }) => {
