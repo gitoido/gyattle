@@ -36,6 +36,7 @@ export const wordsLength2 = [
   'er',
   'es',
   'et',
+  'ew',
   'ex',
   'fa',
   'fe',
@@ -81,6 +82,7 @@ export const wordsLength2 = [
   'of',
   'oh',
   'oi',
+  'ok',
   'om',
   'on',
   'oo',
@@ -122,5 +124,6 @@ export const wordsLength2 = [
   'yo',
   'yu',
   'za',
+  'ze',
   'zo',
 ];
