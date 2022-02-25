@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-nwordle-dev-221928-authRole",
+      "UnauthRoleArn": "arn:aws:iam::560875410618:role/amplify-nwordle-dev-221928-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::560875410618:role/amplify-nwordle-dev-221928-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-nwordle-dev-221928-deployment",
+      "UnauthRoleName": "amplify-nwordle-dev-221928-unauthRole",
+      "StackName": "amplify-nwordle-dev-221928",
+      "StackId": "arn:aws:cloudformation:us-east-1:560875410618:stack/amplify-nwordle-dev-221928/3e2b26a0-9678-11ec-b759-12b73b02cfd5",
+      "AmplifyAppId": "d38yo25uryxsab"
+    }
+  }
+}
