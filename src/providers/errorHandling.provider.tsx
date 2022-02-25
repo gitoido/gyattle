@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { ErrorHandlingContext } from 'src/contexts/errorHandling.context';
-import useErrorHandling from 'src/hooks/useErrorHandling';
 
 const ErrorHandlingProvider: React.FC = ({ children }) => {
-  const { error, setError } = useErrorHandling();
+  const [error, setError] = useState<Error | undefined>();
+
+  useEffect(() => {
+    if (error) {
+      console.error(error);
+    }
+  }, [error]);
 
   return (
     <ErrorHandlingContext.Provider

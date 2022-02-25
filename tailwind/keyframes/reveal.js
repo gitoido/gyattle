@@ -1,8 +1,8 @@
 module.exports = {
-  from: {
+  '0%, 100%': {
     transform: 'rotateX(0)',
   },
-  to: {
+  '50%': {
     transform: 'rotateX(-90deg)',
   },
 };

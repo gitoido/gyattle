@@ -1,17 +1,19 @@
-import { WordLengthContext } from 'contexts/wordLength.context';
 import type { NextPage } from 'next';
 import { useContext } from 'react';
-import Keyboard from 'src/components/molecules/Keyboard';
+import Stopwatch from 'src/components/atoms/Stopwatch';
+import Game from 'src/components/organisms/Game';
+import { WordLengthContext } from 'src/contexts/wordLength.context';
 
 const Home: NextPage = () => {
   const { wordLength, setWordLength } = useContext(WordLengthContext);
 
   return (
-    <div>
-      word length {wordLength}
+    <>
+      {/* word length {wordLength}
       <div onClick={() => setWordLength((wordLength) => wordLength + 1)}>increase</div>
-      <Keyboard onEnter={(input) => console.log(input)} />
-    </div>
+
+      <Game /> */}
+    </>
   );
 };
 

@@ -7,3 +7,175 @@
     @apply font-sans;
   }
 }
+
+@layer components {
+  .cell {
+    @apply w-16 h-16 flex items-center justify-center text-[2rem] font-medium uppercase leading-none border-2;
+  }
+
+  .cell-pristine {
+    @apply border-nwordle-gray-200 bg-transparent text-black;
+  }
+
+  .cell-idle {
+    @apply border-nwordle-gray-400 bg-transparent text-black;
+  }
+
+  .cell-absent {
+    @apply border-nwordle-gray-400 bg-nwordle-gray-400 text-white;
+  }
+
+  .cell-present {
+    @apply border-nwordle-yellow-50 bg-nwordle-yellow-50 text-white;
+  }
+
+  .cell-correct {
+    @apply border-nwordle-green-50 bg-nwordle-green-50 text-white;
+  }
+
+  .row {
+    @apply flex justify-center gap-2;
+  }
+}
+
+@layer utilities {
+  /* Row Animation Utilities */
+  .row.error {
+    @apply animate-error;
+  }
+  /* End of Row Animation Utilities */
+
+  /* Cell Animations Utilities */
+  .cell.popIn {
+    @apply animate-popIn;
+  }
+
+  .cell.reveal {
+    @apply animate-reveal;
+  }
+
+  .cell.reveal:nth-child(1) {
+    animation-delay: 0ms;
+  }
+
+  .cell.reveal:nth-child(2) {
+    animation-delay: 500ms;
+  }
+
+  .cell.reveal:nth-child(3) {
+    animation-delay: 1000ms;
+  }
+
+  .cell.reveal:nth-child(4) {
+    animation-delay: 1500ms;
+  }
+
+  .cell.reveal:nth-child(5) {
+    animation-delay: 2000ms;
+  }
+
+  .cell.reveal:nth-child(6) {
+    animation-delay: 2500ms;
+  }
+
+  .cell.reveal:nth-child(7) {
+    animation-delay: 3000ms;
+  }
+
+  .cell.reveal:nth-child(8) {
+    animation-delay: 3500ms;
+  }
+
+  .cell.reveal:nth-child(9) {
+    animation-delay: 4000ms;
+  }
+
+  .cell.reveal:nth-child(10) {
+    animation-delay: 4500ms;
+  }
+
+  .cell.reveal:nth-child(11) {
+    animation-delay: 5000ms;
+  }
+
+  .cell.reveal:nth-child(12) {
+    animation-delay: 5500ms;
+  }
+
+  .cell.reveal:nth-child(13) {
+    animation-delay: 6000ms;
+  }
+
+  .cell.reveal:nth-child(14) {
+    animation-delay: 6500ms;
+  }
+
+  .cell.reveal:nth-child(15) {
+    animation-delay: 7000ms;
+  }
+
+  .cell.win {
+    @apply animate-win;
+  }
+
+  .cell.win:nth-child(1) {
+    animation-delay: 0;
+  }
+
+  .cell.win:nth-child(2) {
+    animation-delay: 100ms;
+  }
+
+  .cell.win:nth-child(3) {
+    animation-delay: 200ms;
+  }
+
+  .cell.win:nth-child(4) {
+    animation-delay: 300ms;
+  }
+
+  .cell.win:nth-child(5) {
+    animation-delay: 400ms;
+  }
+
+  .cell.win:nth-child(6) {
+    animation-delay: 500ms;
+  }
+
+  .cell.win:nth-child(7) {
+    animation-delay: 600ms;
+  }
+
+  .cell.win:nth-child(8) {
+    animation-delay: 700ms;
+  }
+
+  .cell.win:nth-child(9) {
+    animation-delay: 800ms;
+  }
+
+  .cell.win:nth-child(10) {
+    animation-delay: 900ms;
+  }
+
+  .cell.win:nth-child(11) {
+    animation-delay: 1000ms;
+  }
+
+  .cell.win:nth-child(12) {
+    animation-delay: 1100ms;
+  }
+
+  .cell.win:nth-child(13) {
+    animation-delay: 1200ms;
+  }
+
+  .cell.win:nth-child(14) {
+    animation-delay: 1300ms;
+  }
+
+  .cell.win:nth-child(15) {
+    animation-delay: 1400ms;
+  }
+  /* End of Cell Animations Utilities */
+}

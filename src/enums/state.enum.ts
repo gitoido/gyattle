@@ -1,4 +1,5 @@
-export enum KeyboardKeyState {
+export enum State {
+  PRISTINE,
   IDLE,
   ABSENT,
   PRESENT,

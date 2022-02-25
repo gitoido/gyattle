@@ -1,13 +1,11 @@
-const bounce = require('./bounce');
-const flipIn = require('./flipIn');
-const flipOut = require('./flipOut');
+const win = require('./win');
+const reveal = require('./reveal');
 const popIn = require('./popIn');
-const shake = require('./shake');
+const error = require('./error');
 
 module.exports = {
-  shake,
+  error,
   popIn,
-  flipIn,
-  flipOut,
-  bounce,
+  reveal,
+  win,
 };

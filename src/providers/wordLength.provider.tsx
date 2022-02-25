@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { DEFAULT_WORD_LENGTH } from 'src/constants/wordLength.constants';
 import { WordLengthContext } from 'src/contexts/wordLength.context';
-import { useWordLength } from 'src/hooks/useWordLength';
 
 const WordLengthProvider: React.FC = ({ children }) => {
-  const { wordLength, setWordLength } = useWordLength();
+  const [wordLength, setWordLength] = useState<number>(DEFAULT_WORD_LENGTH);
 
   return (
     <WordLengthContext.Provider

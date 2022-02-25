@@ -1,16 +1,17 @@
 import classNames from 'classnames';
-import { WordLengthContext } from 'contexts/wordLength.context';
 import { keyboardRow1, keyboardRow2, keyboardRow3 } from 'data/common/keyboard';
 import React, { useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import KeyboardKey from 'src/components/atoms/KeyboardKey';
+import { WordLengthContext } from 'src/contexts/wordLength.context';
 
 interface Props {
-  onEnter: (input: string[]) => void;
+  onInput: (input: string[]) => void;
+  onEnter: () => void;
 }
 
-const Keyboard: React.FC<Props> = ({ onEnter }) => {
-  const [input, setInput] = useState<string[]>([]);
+const Keyboard: React.FC<Props> = ({ onInput, onEnter }) => {
   const { wordLength } = useContext(WordLengthContext);
+  const [input, setInput] = useState<string[]>([]);
 
   useEffect(() => {
     setInput([]);
@@ -20,7 +21,7 @@ const Keyboard: React.FC<Props> = ({ onEnter }) => {
     (key: string) => {
       switch (key) {
         case 'Enter':
-          onEnter(input);
+          onEnter();
           break;
         case 'Backspace':
           setInput((input) => {
@@ -28,6 +29,9 @@ const Keyboard: React.FC<Props> = ({ onEnter }) => {
 
             return input;
           });
+
+          onInput([...input]);
+
           break;
         default:
           if (input.length >= wordLength) {
@@ -39,10 +43,13 @@ const Keyboard: React.FC<Props> = ({ onEnter }) => {
 
             return input;
           });
+
+          onInput([...input]);
+
           break;
       }
     },
-    [input, wordLength, onEnter]
+    [input, wordLength, onInput, onEnter]
   );
 
   const keydownHandler = useCallback(
