@@ -4,28 +4,10 @@ import { useContext } from 'react';
 import Stopwatch from 'src/components/atoms/Stopwatch';
 import Game from 'src/components/organisms/Game';
 import { WordLengthContext } from 'src/contexts/wordLength.context';
-import { API } from 'aws-amplify';
 import gql from 'graphql-tag';
 
 const Home: NextPage = () => {
   function handler() {
-    (
-      API.graphql({
-        query: gql`
-          query {
-            listBlogs {
-              items {
-                id
-                name
-              }
-            }
-          }
-        ` as unknown as string,
-        variables: {},
-      }) as Promise<any>
-    )
-      .then(console.log)
-      .catch(console.warn);
   }
 
   const { data: session } = useSession();
