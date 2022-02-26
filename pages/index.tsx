@@ -6,6 +6,8 @@ import Game from 'src/components/organisms/Game';
 import { WordLengthContext } from 'src/contexts/wordLength.context';
 import gql from 'graphql-tag';
 
+// import aws_exports from 'src/aws-exports';
+
 const Home: NextPage = () => {
   function handler() {
   }
