@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  target: 'experimental-serverless-trace',
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
