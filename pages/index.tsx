@@ -4,23 +4,46 @@ import { useContext } from 'react';
 import Stopwatch from 'src/components/atoms/Stopwatch';
 import Game from 'src/components/organisms/Game';
 import { WordLengthContext } from 'src/contexts/wordLength.context';
+import { API } from 'aws-amplify';
+import gql from 'graphql-tag';
 
 const Home: NextPage = () => {
-  const { data: session } = useSession()
+  function handler() {
+    (
+      API.graphql({
+        query: gql`
+          query {
+            listBlogs {
+              items {
+                id
+                name
+              }
+            }
+          }
+        ` as unknown as string,
+        variables: {},
+      }) as Promise<any>
+    )
+      .then(console.log)
+      .catch(console.warn);
+  }
+
+  const { data: session } = useSession();
   if (session) {
     return (
       <>
         Signed in as {session?.user?.email} <br />
         <button onClick={() => signOut()}>Sign out</button>
       </>
-    )
+    );
   }
   return (
     <>
       Not signed in <br />
+      <h4 onClick={handler}>GO GO GO</h4>
       <button onClick={() => signIn()}>Sign in</button>
     </>
-  )
+  );
   // const { wordLength, setWordLength } = useContext(WordLengthContext);
 
   // return (
