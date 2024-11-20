@@ -9,6 +9,8 @@ const nextConfig = {
 
     return config;
   },
+  output: 'export',
+  basePath: '/gyattle',
 };
 
 module.exports = nextConfig;
