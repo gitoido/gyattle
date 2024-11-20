@@ -11,6 +11,9 @@ const nextConfig = {
   },
   output: 'export',
   basePath: '/gyattle',
+  images: {
+    unoptimized: true,
+  },
 };
 
 module.exports = nextConfig;
